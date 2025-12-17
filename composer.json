@@ -1,5 +1,5 @@
 {
-    "name": "bezhansalleh/filament-language-switch",
+    "name": "adultdate/filament-language-switch",
     "description": "Zero config Language Switch(Changer/Localizer) plugin for filamentphp admin",
     "keywords": [
         "bezhanSalleh",
@@ -15,8 +15,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Bezhan Salleh",
-            "email": "bezhan_salleh@yahoo.com",
+            "name": "adultdate",
+            "email": "adultdate@gmail.com",
             "role": "Developer"
         }
     ],
