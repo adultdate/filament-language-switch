@@ -1,4 +1,4 @@
-<a href="https://github.com/bezhansalleh/filament-language-switch" class="filament-hidden">
+<a href="https://github.com/adultdate/filament-language-switch" class="filament-hidden">
 
 ![Filament Language Switch](https://repository-images.githubusercontent.com/506847060/81f73ae9-6cef-4f89-a4cf-47de0412e0b5 "Filament Language Switch")
 
@@ -7,15 +7,15 @@
     <a href="https://filamentadmin.com/docs/2.x/admin/installation">
         <img alt="FILAMENT 4.x" src="https://img.shields.io/badge/FILAMENT-4.x-EBB304?style=for-the-badge">
     </a>
-    <a href="https://packagist.org/packages/bezhansalleh/filament-language-switch">
-        <img alt="Packagist" src="https://img.shields.io/packagist/v/bezhansalleh/filament-language-switch.svg?style=for-the-badge&logo=packagist">
+    <a href="https://packagist.org/packages/adultdate/filament-language-switch">
+        <img alt="Packagist" src="https://img.shields.io/packagist/v/adultdate/filament-language-switch.svg?style=for-the-badge&logo=packagist">
     </a>
-    <a href="https://github.com/bezhansalleh/filament-language-switch/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain" class="filament-hidden">
-        <img alt="Code Style Passing" src="https://img.shields.io/github/actions/workflow/status/bezhansalleh/filament-language-switch/run-laravel-pint.yml?style=for-the-badge&logo=github&label=code%20style">
+    <a href="https://github.com/adultdate/filament-language-switch/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain" class="filament-hidden">
+        <img alt="Code Style Passing" src="https://img.shields.io/github/actions/workflow/status/adultdate/filament-language-switch/run-laravel-pint.yml?style=for-the-badge&logo=github&label=code%20style">
     </a>
 
-<a href="https://packagist.org/packages/bezhansalleh/filament-language-switch">
-    <img alt="Downloads" src="https://img.shields.io/packagist/dt/bezhansalleh/filament-language-switch.svg?style=for-the-badge" >
+<a href="https://packagist.org/packages/adultdate/filament-language-switch">
+    <img alt="Downloads" src="https://img.shields.io/packagist/dt/adultdate/filament-language-switch.svg?style=for-the-badge" >
     </a>
 <a href="https://discord.com/channels/883083792112300104/990920249744453642" target="_blank">
     <img alt="Downloads" src="https://img.shields.io/discord/883083792112300104?label=Discord&style=for-the-badge" >
@@ -30,26 +30,26 @@ The **Language Switch** plugin is a versatile and user-friendly tool designed fo
 
 | Package Version | Filament Version | 
 |----------------|---------------------|
-| [v1](https://github.com/bezhanSalleh/filament-language-switch/tree/1.x) | [v2](https://filamentphp.com/docs/2.x/admin/installation) |
-| [v3](https://github.com/bezhanSalleh/filament-language-switch/tree/3.x) | [v3](https://filamentphp.com/docs/3.x/panels/installation) |
+| [v1](https://github.com/adultdate/filament-language-switch/tree/1.x) | [v2](https://filamentphp.com/docs/2.x/admin/installation) |
+| [v3](https://github.com/adultdate/filament-language-switch/tree/3.x) | [v3](https://filamentphp.com/docs/3.x/panels/installation) |
 | v4 | [v4](https://filamentphp.com/docs/4.x/introduction/overview) |
 
 ### Upgrading from v3 to v4
 
-If you are upgrading from version 3 to version 4, you will need to update the namespace anywhere you are using the plugin from `BezhanSalleh\LanguageSwitch` to `BezhanSalleh\FilamentLanguageSwitch`.
+If you are upgrading from version 3 to version 4, you will need to update the namespace anywhere you are using the plugin from `adultdate\LanguageSwitch` to `adultdate\FilamentLanguageSwitch`.
 
 ## Installation
 
 Install the package via composer:
 
 ```bash
-composer require bezhansalleh/filament-language-switch
+composer require adultdate/filament-language-switch
 ```
 > [!IMPORTANT]
 > The plugin follows Filament's theming rules. So, to use the plugin create a custom theme if you haven't already, and add the following line to your `theme.css` file:
 
 ```php
-@source '../../../../vendor/bezhansalleh/filament-language-switch/resources/views/**/*.blade.php';
+@source '../../../../vendor/adultdate/filament-language-switch/resources/views/**/*.blade.php';
 ```
 Now build your theme using: 
 ```bash
@@ -64,7 +64,7 @@ The plugin boots after installation automatically. For the plugin to work, provi
 ```php
 
 ...
-use BezhanSalleh\LanguageSwitch\LanguageSwitch;
+use adultdate\LanguageSwitch\LanguageSwitch;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -94,7 +94,7 @@ The plugin comes with following options that you can customize and configure as 
 Whenever the locale is changed, the plugin dispatches a `LocaleChanged` event. You can listen to this event in your application to perform any additional actions or logic when the language is switched.
 
 ```php
-use BezhanSalleh\LanguageSwitch\Events\LocaleChanged;
+use adultdate\LanguageSwitch\Events\LocaleChanged;
 use Illuminate\Support\Facades\Event;
  
 /**
@@ -184,7 +184,7 @@ Set the desired placement for the **language switch** outside Filament Panels li
 ```php
 // AppServiceProvider.php
 ...
-use BezhanSalleh\LanguageSwitch\Enums\Placement;
+use adultdate\LanguageSwitch\Enums\Placement;
 
 LanguageSwitch::configureUsing(function (LanguageSwitch $switch) {
     $switch
@@ -361,7 +361,7 @@ Install the packages in your app's `composer.json`:
 
 ```json
 "require": {
-    "bezhansalleh/filament-language-switch": "dev-fix/error-message as main-dev",
+    "adultdate/filament-language-switch": "dev-fix/error-message as main-dev",
 },
 "repositories": [
     {
@@ -381,7 +381,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
--   [Bezhan Salleh](https://github.com/bezhanSalleh)
+-   [Bezhan Salleh](https://github.com/adultdate)
 -   [All Contributors](../../contributors)
 
 ## License
