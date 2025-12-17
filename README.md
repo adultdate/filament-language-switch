@@ -30,13 +30,13 @@ The **Language Switch** plugin is a versatile and user-friendly tool designed fo
 
 | Package Version | Filament Version | 
 |----------------|---------------------|
-| [v1](https://github.com/adultdate/filament-language-switch/tree/1.x) | [v2](https://filamentphp.com/docs/2.x/admin/installation) |
-| [v3](https://github.com/adultdate/filament-language-switch/tree/3.x) | [v3](https://filamentphp.com/docs/3.x/panels/installation) |
+| [v1](https://github.com/bezhanSalleh/filament-language-switch/tree/1.x) | [v2](https://filamentphp.com/docs/2.x/admin/installation) |
+| [v3](https://github.com/bezhanSalleh/filament-language-switch/tree/3.x) | [v3](https://filamentphp.com/docs/3.x/panels/installation) |
 | v4 | [v4](https://filamentphp.com/docs/4.x/introduction/overview) |
 
 ### Upgrading from v3 to v4
 
-If you are upgrading from version 3 to version 4, you will need to update the namespace anywhere you are using the plugin from `adultdate\LanguageSwitch` to `adultdate\FilamentLanguageSwitch`.
+If you are upgrading from version 3 to version 4, you will need to update the namespace anywhere you are using the plugin from `BezhanSalleh\LanguageSwitch` to `BezhanSalleh\FilamentLanguageSwitch`.
 
 ## Installation
 
@@ -64,7 +64,7 @@ The plugin boots after installation automatically. For the plugin to work, provi
 ```php
 
 ...
-use adultdate\LanguageSwitch\LanguageSwitch;
+use BezhanSalleh\LanguageSwitch\LanguageSwitch;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -94,7 +94,7 @@ The plugin comes with following options that you can customize and configure as 
 Whenever the locale is changed, the plugin dispatches a `LocaleChanged` event. You can listen to this event in your application to perform any additional actions or logic when the language is switched.
 
 ```php
-use adultdate\LanguageSwitch\Events\LocaleChanged;
+use BezhanSalleh\LanguageSwitch\Events\LocaleChanged;
 use Illuminate\Support\Facades\Event;
  
 /**
@@ -184,7 +184,7 @@ Set the desired placement for the **language switch** outside Filament Panels li
 ```php
 // AppServiceProvider.php
 ...
-use adultdate\LanguageSwitch\Enums\Placement;
+use BezhanSalleh\LanguageSwitch\Enums\Placement;
 
 LanguageSwitch::configureUsing(function (LanguageSwitch $switch) {
     $switch
@@ -381,7 +381,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
--   [Bezhan Salleh](https://github.com/adultdate)
+-   [Bezhan Salleh](https://github.com/bezhanSalleh)
 -   [All Contributors](../../contributors)
 
 ## License
